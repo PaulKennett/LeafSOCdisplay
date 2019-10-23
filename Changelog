@@ -1,0 +1,14 @@
+LeafSOCdisplay changelog
+
+1 Oct 2019
+* Started project from https://ev-olution.yolasite.com/CANa.php
+* Starting code https://ev-olution.yolasite.com/resources/CANa_Display/CANa_Ver01.ino
+
+10 Oct 2019
+* rewrote the display sections to work with a 128x64 OLED display, using the U8G2 lib
+* using the display upsidedown so that the wires come down from the bottom 
+
+22 Oct 2019
+* renamed variables SOC -> rawGids, SOCPct -> GidsPct, MAX_SOC -> MAX_GIDS, ActSoc -> rawSOC, ActSocPct -> SOCPct
+* refactored SOC so that 8 Gids = 0% up to MAX-GIDS - 8 = 100%. This means 0% occurs at turtle mode and 100% when the battery is full
+* 
