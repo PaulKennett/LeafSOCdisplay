@@ -19,6 +19,12 @@ done is change the code to make it work with a nice OLED display that will fit i
 OBD2 port in such a way that it only works when the car is turned on. [Note: the dongles that are used with LeafSpy run 
 24/7 unless you manually turn them off - which is a security risk.]
 
+Note: I'm not a programmer - my process is cut-n-paste and see if it works. So if you find stuff in the code that looks 
+stupid it probably is. If you can see a better way to do it feel free to contribute your code improvements.
+
+Thanks, Paul
+paul at kennett dot co dot nz
+
 Hardware
 --------
 These parts are available from Aliexpress, Amazon, EBay, TradeMe, Banggood, etc.
