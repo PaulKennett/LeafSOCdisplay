@@ -4,7 +4,7 @@ LeafSOCdisplay
 See also: http://www.myonlinediary.com/index.php/Energy/SOCDisplay
 And https://youtu.be/gQJ3Da4Tbn0?t=80
 
-This project adds a SOC% display to a Nissan Leaf. This useful for 2011 and 2012 Leafs which did not include thios feature!
+This project adds a SOC% display to a Nissan Leaf. This useful for 2011 and 2012 Leafs which did not include this feature!
 
 The first generation Leafs did not show the battery State of Charge accurately on the dash. There's the 12 blue bars on the 
 right by the range estimate but that's all. After 2012 they added a SOC% feature to the main dash. This project replicates 
