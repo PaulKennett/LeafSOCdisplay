@@ -37,12 +37,14 @@ These parts are available from Aliexpress, Amazon, EBay, TradeMe, Banggood, etc.
   Alternatively you could use a Arduino Pro Micro which has built in USB communications)
 * OLED display 128x64 pixel 1/3 inch monochrome OLED display
 * OBD2 plug (male)
-* 7-way ribbon cable
+* 7-way ribbon cable, 60cm long
 * 40 Pin 2.54 mm Right Angle Single Row Pin Header Male
 * Dupont-style jumper wires
 * a plastic box to house the electronic bits
 
 Optional:
+* 3D printed shroud to cover the display inside the dash (STL file included for the 0.96 inch 128x64 OLED display,
+  90-degree "portrait" orientation)
 * OBD2 Splitter Extension Cable
 
 Circuit description
@@ -70,7 +72,7 @@ To install the display inside the dash you'll need to remove the dash and unclip
 Leaf Instrument Cluster Removal for an explanation of how to remove the dash.
 
 I also used a craft knife to trim 1mm off edge of the dash to allow the 7-wire ribbon cable to exit cleanly. Clip the
-dash front back on thread the ribbon cable down past the lower dash.
+dash back in place and thread the ribbon cable down past the lower dash.
 
 Next you'll want to remove the lower dash panel, see Nissan Leaf 020 - ETC replacement options. Once that's open you 
 can attach the OLED ribbon to the Arduino and zip-tie the electronic modules (in a plastic box maybe) somewhere where 
