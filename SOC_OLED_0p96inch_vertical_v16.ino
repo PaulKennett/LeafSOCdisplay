@@ -5,14 +5,13 @@ Note: later Leafs display SOC% on the main dash, so this solution is only useful
 
 Shows SOC%, Gids, Volts, Amps and internal Soc on a single vertically (rotated 90 degrees) mounted OLED 64x128 display
 
-Use a 1.3 inch 128x64 pixel OLED display and install it INSIDE the top "eyebrow" dash covering 
-up the efficiency trees part of the diasplay.
-Connect the OLED display to an Arduino Pro Mini using ribbon cable.
+The sole purpose of this project is to display SOC% inside the "eye brow" dash using nice little (and cheap)
+128x64 pixel OLED display. This display is mounted over the efficiency trees part of the dash.
 
 Based on "CANa Display for Nissan LEAF"  https://ev-olution.yolasite.com/CANa.php © Copyright EV-OLUTION
 
 Modified by Paul Kennett October 2019 to talk to a standard/cheap 128x64 OLED dsiplay.
-I also I've removed the input push-button switch that allowed you to select addition pages.
+I also I've removed the input push-button switch that allowed you to select additional pages.
 
 Version 16
 - removing Volts and Amps
