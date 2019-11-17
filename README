@@ -60,6 +60,11 @@ in the case of the Leaf gives the Car-CAN bus.
 
 The EV-CAN signals go into the MCP2515_CAN module - which is connected to the Arduino via 5-wire SPI.
 
+3D printed frame
+----------------
+I've made some STL files so you can 3D print a nice covering frame for the display. I've made both vertical and 
+horzontal versions for the little 0.96 inch OLED displays. for the 1.54 inch OLED display it'll *only* git horizontally
+and you have to seperate the glass display from the PCB. The larger display is much easier to read though.
 
 Installation
 ------------
@@ -68,13 +73,14 @@ serve a critical function so it's no great loss. I stuck a piece of wide black e
 used double sided tape to stick the OLED display onto the black tape. (Note: electrical tape is usually easy to remove 
 so you could remove all this if you needed to.)
 
-To install the display inside the dash you'll need to remove the dash and unclip the clear plastic front. See Nissan 
-Leaf Instrument Cluster Removal for an explanation of how to remove the dash.
+To install the display inside the dash you'll need to remove the dash and unclip the clear plastic front. See "Nissan 
+Leaf Instrument Cluster Removal" on Youtube for an explanation of how to remove the dash. Then remove the black front
+trim piece - it's also just clipped on.
 
-I also used a craft knife to trim 1mm off edge of the dash to allow the 7-wire ribbon cable to exit cleanly. Clip the
-dash back in place and thread the ribbon cable down past the lower dash.
+I used a craft knife to trim 1mm off the inside edge of the dash to allow the 7-wire ribbon cable to exit cleanly. Clip 
+the dash back in place and thread the ribbon cable down past the lower dash.
 
-Next you'll want to remove the lower dash panel, see Nissan Leaf 020 - ETC replacement options. Once that's open you 
-can attach the OLED ribbon to the Arduino and zip-tie the electronic modules (in a plastic box maybe) somewhere where 
-they won't rattle and then connect the OBD2 plug to the socket.
+Next you'll want to remove the lower dash panel, see "Nissan Leaf 020 - ETC replacement options" on Youtube. Once that's 
+open you can attach the OLED ribbon to the Arduino and zip-tie the electronic modules (in a plastic box maybe) somewhere 
+where they won't rattle and then connect the OBD2 plug to the socket.
 
