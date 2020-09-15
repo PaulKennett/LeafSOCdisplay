@@ -24,7 +24,6 @@
 #include <U8g2lib.h>           // graphics library
 #include <mcp_can.h>           // OBD2 module
 #include <SPI.h>               // for talking to a SPI devices 
-//#include <Wire.h>            // for talking to an I2C display
 #include <EEPROM.h>            // read/write to the EEPROM memory
 #include "battery_128x56_XBMP.h" // battery image
 #include "changelog.h"         // changelog and verbose notes
