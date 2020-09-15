@@ -15,9 +15,9 @@
    V41 - 28 Aug 2020
    Cleaning out old experimental junk
    add some experiment pages
-   add ability to chage page by: (1) Put gear in Neutral, AC On, Recirc Air,
-   then change fan speed to change pages, Full fan speed -> Reset Arduino
-   
+   add ability to chage page by: (1) Put Climate Control ON, Air to RECIRC,
+   then change FAN SPEED to change pages, Full fan speed -> Reset Arduino
+   Note: it can take a couple of seconds for the fan speed to be read.   
 */
 
 #include <Arduino.h>
