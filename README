@@ -6,7 +6,7 @@ See also: http://www.myonlinediary.com/index.php/Energy/SOCDisplay
 And https://youtu.be/gQJ3Da4Tbn0?t=80
 
 This project started out to simply add a SOC% display to my 2011 Nissan Leaf. It's grown to now include a range estimator
-(better than the Guess-O-Meter).
+(slightly better than the Nissan "Guess-O-Meter").
 
 The first generation Leafs did not show the battery State of Charge accurately on the dash. There's the 12 blue bars on the 
 right by the range estimate but that's all. After 2012 they added a SOC% feature to the main dash. This project replicates 
@@ -22,6 +22,10 @@ the code to add enhancements. It is powered by the OBD2 port in such a way that 
 
 Note: I'm not a programmer - my process is cut-n-paste and see if it works. So if you find stuff in the code that looks 
 stupid it probably is. If you can see a better way to do it feel free to contribute your code improvements.
+
+The code is now setup for a cheap 1.30 inch OLED with the SH1106 driver. If you want to use a 0.96 or 1.54 inch display (with the
+SSD1306 driver) you'll just need to comment/uncomment the correct line to get the U8G2 graphics library working. It's explained
+in my code fairly well.
 
 Thanks, Paul
 paul at kennett dot co dot nz
