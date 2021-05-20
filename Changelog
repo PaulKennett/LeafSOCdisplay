@@ -1,14 +1,45 @@
 LeafSOCdisplay changelog
 
-1 Oct 2019
-* Started project from https://ev-olution.yolasite.com/CANa.php
-* Starting code https://ev-olution.yolasite.com/resources/CANa_Display/CANa_Ver01.ino
+   V49 - 20 May 2021
+   Store MAX_GIDS variable in EEPROM and made it adjustable via the Climate Contols in the Leaf
+   Store km_per_kWh variable in EEPROM and made it adjustable via the Climate Contols in the Leaf
+
+   V47 - 16 May 2021
+   Cleaned out the code for changing pages by a push button - hoping it would improve initial CAN data loading but it doesn't :(
+   mMaybe the slow start is due to a clash between the MCP2515 and U8g2lib? Could switch to using Adafruit GFX lib instead. 
+   (My RangePlot project uses the Adafruit library.)
+
+   V46 - 16 May 2021
+   Cleaned out the code for test-mode - I'm not using it anymore so it's just cruft
+
+   V45 - 10 May 2021
+   Changed to using 1.30inch OLED 128x64 display which uses the SH1106 driver. The u8G2 connector for the old SSD1306 driver 
+   is commented out. If you want to use one of those diaplays simply comment out the SH1106 connector and un-comment the SSD1306 line.
+
+   V44 - 25 Apr 2021
+   Minor visual tweaks (moved text down on Page 3, and fixed kWh number alignment)
+
+   V43 - 17 Apr 2021
+   Added Page 3: Range page that fills display
+   Added Page 4: Range page and small battry SOC% (repaces the crude data dump page)
+
+   V42 - 16 Sept 2020
+   Cleaning code before uploading to Github
+
+   V41 - 28 Aug 2020
+   Cleaning out old experimental junk
+   added ability to change page by: (1) Put Climate Control On, Recirc Air,
+   then change fan speed to change pages, Full fan speed -> Reset Arduino
+
+22 Oct 2019
+* renamed variables SOC -> rawGids, SOCPct -> GidsPct, MAX_SOC -> MAX_GIDS, ActSoc -> rawSOC, ActSocPct -> SOCPct
+* refactored SOC so that 8 Gids = 0% up to MAX-GIDS - 8 = 100%. This means 0% occurs at turtle mode and 100% when the battery is full
 
 10 Oct 2019
 * rewrote the display sections to work with a 128x64 OLED display, using the U8G2 lib
 * using the display upsidedown so that the wires come down from the bottom 
 
-22 Oct 2019
-* renamed variables SOC -> rawGids, SOCPct -> GidsPct, MAX_SOC -> MAX_GIDS, ActSoc -> rawSOC, ActSocPct -> SOCPct
-* refactored SOC so that 8 Gids = 0% up to MAX-GIDS - 8 = 100%. This means 0% occurs at turtle mode and 100% when the battery is full
-* 
+1 Oct 2019
+* Started project from https://ev-olution.yolasite.com/CANa.php
+* Starting code https://ev-olution.yolasite.com/resources/CANa_Display/CANa_Ver01.ino
+
