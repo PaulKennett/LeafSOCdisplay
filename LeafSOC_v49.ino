@@ -148,6 +148,9 @@ void setup() {
   CAN0.setMode(MCP_NORMAL);                     // Set to normal mode so the MCP2515 sends acks to received data.
   pinMode(CAN0_INT, INPUT);
 
+  if (EEPROM.read(EEPROMaddr0) > 6 ) {
+    EEPROM.write(EEPROMaddr0, Page); // for the first time you run this code on a blank/new Arduino
+  }
   if (EEPROM.read(EEPROMaddr1) > 40  && EEPROM.read(EEPROMaddr1) < 100 ) {
     km_per_kWh = (EEPROM.read(EEPROMaddr1)) / 10.0F;
   } else {
