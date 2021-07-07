@@ -1,6 +1,6 @@
 LeafSOC embedded dash display
 =============================
-Updated 20 May 2021
+Updated 7 Julu 2021
 
 See also: http://www.myonlinediary.com/index.php/Energy/SOCDisplay
 And https://youtu.be/gQJ3Da4Tbn0?t=80
@@ -20,12 +20,31 @@ done is change the code to make it work with a nice OLED display that will fit i
 the code to add enhancements. It is powered by the OBD2 port in such a way that it only works when the car is turned on. 
 [Note: some of the dongles that are used for LeafSpy can run 24/7 unless you manually turn them off - which is a security risk.]
 
-Note: I'm not a programmer - my process is cut-n-paste and see if it works. So if you find stuff in the code that looks 
+Note: I'm a poor and slow programmer - my process is cut-n-paste and see if it works. So if you find stuff in the code that looks 
 stupid it probably is. If you can see a better way to do it feel free to contribute your code improvements.
 
 The code is now setup for a cheap 1.30 inch OLED with the SH1106 driver. If you want to use a 0.96 or 1.54 inch display (with the
 SSD1306 driver) you'll just need to comment/uncomment the correct line to get the U8G2 graphics library working. It's explained
 in my code fairly well.
+
+How to change pages and set the default km/kWh value (which is used to calculate the range):
+============================================================================================
+To enter setup mode
+1. Turn Climate ON
+2. Turn AC OFF
+3. Select Recirculation air
+4. Select Feet only mode
+To change pages
+1. Press the Fan speed up or down to select pages
+   1. Range & SOC% & kWh
+   2. SOC% & kWh
+   3. Range only
+   4. Software version, date and author
+   5. Misc data values for experimenting
+   6. Set default km/kWh - to edit the value you need to:
+   (a) put the car in Neutral, then
+   (b) use the tempurature buttons to change the value up or down
+   7. Reset the Arduino [Note: the Arduino will keep reseting itself util you change the fan speed or restart the car]
 
 Thanks, Paul
 paul at kennett dot co dot nz
