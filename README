@@ -65,6 +65,7 @@ These parts are available from Aliexpress, Amazon, EBay, TradeMe, Banggood, etc.
 Optional:
 * 3D printed shroud to cover the display inside the dash (STL file included for the 0.96, 1.30 and 1.54 inch 128x64 OLED displays
 * OBD2 Splitter Extension Cable
+* PCB motherboard (Gerber file: https://github.com/PaulKennett/LeafRange/blob/main/Gerber_PCB_LeafRange%20Micro%20v0.3C_2022-04-28.zip)
 
 Circuit description
 -------------------
