@@ -81,7 +81,7 @@ in the case of the Leaf gives the Car-CAN bus.
 The EV-CAN signals go into the MCP2515_CAN module - which is connected to the Arduino via 5-wire SPI.
 
 If you want a fancy looking setup use the PCB motherboard I've designed for the LeafRange project - it's the same 
-hardware and has a jumper for switching betwen EV-CAN and Car-CAN data buses.
+hardware and has jumpers for switching between EV-CAN and Car-CAN data buses. See https://github.com/PaulKennett/LeafRange
 
 3D printed frame
 ----------------
